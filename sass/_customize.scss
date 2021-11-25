@@ -1,0 +1,67 @@
+@use "sass:map";
+
+// variables
+
+//fonts
+@font-face {
+	font-family: "Red Hat Display";
+	src: url("../fonts/RedHatDisplay-VariableFont_wght.ttf");
+}
+
+$font-family: "Red Hat Display";
+$font-size: 16px;
+
+// colors
+$primary: (
+	"Pale blue": hsl(225, 100%, 94%),
+	"Bright blue": hsl(245, 75%, 52%)
+);
+
+$neutral: (
+	"Very pale blue": hsl(225, 100%, 98%),
+	"Desaturated blue": hsl(224, 23%, 55%),
+	"Dark blue": hsl(223, 47%, 23%)
+);
+
+
+// fonts
+.text-pale-blue{
+    color: map.get($primary, "Pale blue") !important;
+}
+
+.text-bright-blue{
+    color: map.get($primary, "Bright blue") !important;
+}
+
+.text-ver-pale-blue{
+    color: map.get($neutral, "Very pale blue") !important;
+}
+
+.text-desaturated-blue{
+    color: map.get($neutral, "Desaturated blue") !important;
+}
+
+.text-dark-blue{
+    color: map.get($neutral, "Dark blue") !important;
+}
+
+// backgrounds
+.bg-pale-blue{
+    background-color: map.get($primary, "Pale blue") !important;
+}
+
+.bg-bright-blue{
+    background-color: map.get($primary, "Bright blue") !important;
+}
+
+.bg-ver-pale-blue{
+    background-color: map.get($neutral, "Very pale blue") !important;
+}
+
+.bg-desaturated-blue{
+    background-color: map.get($neutral, "Desaturated blue") !important;
+}
+
+.bg-dark-blue{
+    background-color: map.get($neutral, "Dark blue") !important;
+}
