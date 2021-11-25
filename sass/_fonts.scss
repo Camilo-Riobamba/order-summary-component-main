@@ -2,6 +2,14 @@
     text-align: center !important;
 }
 
+.text-left{
+    text-align: left !important;
+}
+
+.text-right{
+    text-align: right !important;
+}
+
 .bold{
     font-weight: bold !important;
 }
@@ -26,4 +34,9 @@
     .text-right-md{
         text-align: right !important;
     }
+}
+
+// color
+.text-light{
+    color: #fff;
 }

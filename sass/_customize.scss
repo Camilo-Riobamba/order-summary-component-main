@@ -33,7 +33,7 @@ $neutral: (
     color: map.get($primary, "Bright blue") !important;
 }
 
-.text-ver-pale-blue{
+.text-very-pale-blue{
     color: map.get($neutral, "Very pale blue") !important;
 }
 
@@ -54,7 +54,7 @@ $neutral: (
     background-color: map.get($primary, "Bright blue") !important;
 }
 
-.bg-ver-pale-blue{
+.bg-very-pale-blue{
     background-color: map.get($neutral, "Very pale blue") !important;
 }
 
@@ -64,4 +64,15 @@ $neutral: (
 
 .bg-dark-blue{
     background-color: map.get($neutral, "Dark blue") !important;
+}
+
+.background{
+    background-image: url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include breakpoint(min, md){
+        background-image: url("../images/pattern-background-desktop.svg");
+    }
 }
